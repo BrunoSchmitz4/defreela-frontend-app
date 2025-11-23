@@ -1,0 +1,19 @@
+.wrapper { display:flex; align-items:center; justify-content:center; padding: .6rem; }
+
+.dot {
+  width:10px;
+  height:10px;
+  border-radius:50%;
+  background:var(--primary);
+  margin: 0 .18rem;
+  animation: blink 0.9s infinite ease-in-out;
+}
+
+.dot:nth-child(2){ animation-delay: .12s; }
+.dot:nth-child(3){ animation-delay: .24s; }
+
+@keyframes blink {
+  0% { transform: translateY(0); opacity: .15; }
+  50% { transform: translateY(-6px); opacity: 1; }
+  100% { transform: translateY(0); opacity: .15; }
+}

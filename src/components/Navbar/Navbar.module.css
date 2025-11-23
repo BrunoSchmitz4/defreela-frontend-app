@@ -1,0 +1,69 @@
+.header {
+  width: 100%;
+  background: linear-gradient(90deg, var(--accent), #0b1624);
+  color: white;
+  position: sticky;
+  top:0;
+  z-index:999;
+}
+
+.navbar {
+  max-width:1200px;
+  margin:auto;
+  padding:.75rem 1rem;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:.5rem;
+}
+
+/* logo */
+.logo { font-size:1.25rem; color:var(--primary); text-decoration:none; font-weight:700; }
+
+/* links desktop */
+.links {
+  display:flex;
+  gap:1rem;
+  align-items:center;
+}
+
+/* link item */
+.linkItem {
+  color: #e8eef7;
+  padding:.35rem .6rem;
+  border-radius:8px;
+  text-decoration:none;
+}
+
+.linkItem.active { border-bottom:2px solid rgba(255,255,255,0.12); }
+
+/* hamburger */
+.hambtn {
+  display:none;
+  background:transparent;
+  border:0;
+  width:36px;
+  height:36px;
+  align-items:center;
+  justify-content:center;
+}
+
+/* mobile layout */
+@media (max-width: 768px) {
+  .links {
+    position: fixed;
+    right: -100%;
+    top: 0;
+    width: 68%;
+    height: 100%;
+    padding-top: 5.2rem;
+    flex-direction: column;
+    gap:1.25rem;
+    background: linear-gradient(180deg, #071021, #0b1624);
+    transition: right .26s ease;
+  }
+
+  .links.open { right: 0; }
+
+  .hambtn { display:flex; z-index:1001; }
+}

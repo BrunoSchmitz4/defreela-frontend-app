@@ -1,0 +1,52 @@
+.card {
+  background: var(--card-bg);
+  border-radius: 14px;
+  padding: 1rem;
+  box-shadow: 0 6px 18px rgba(11, 42, 79, 0.06);
+  border-left: 4px solid var(--primary);
+  transition: transform .22s cubic-bezier(.2,.9,.3,1), box-shadow .22s;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 28px rgba(11, 42, 79, 0.12);
+}
+
+.header {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:.5rem;
+  margin-bottom:.6rem;
+}
+
+.title {
+  font-size:1.02rem;
+  font-weight:600;
+  color:var(--primary-dark);
+}
+
+.meta {
+  font-size:.85rem;
+  color: rgba(27,27,27,0.6);
+}
+
+.desc {
+  font-size:.95rem;
+  color: rgba(27,27,27,0.85);
+  margin-top:.45rem;
+}
+
+.footer {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-top:.8rem;
+  gap:.5rem;
+  font-size:.9rem;
+}
+
+/* Responsive tweak */
+@media(min-width: 768px) {
+  .card { padding:1.15rem; }
+}

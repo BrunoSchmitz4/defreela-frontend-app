@@ -1,0 +1,25 @@
+.card {
+  background: var(--card-bg);
+  border-radius: 14px;
+  padding: 1rem;
+  box-shadow: 0 5px 14px rgba(0,0,0,0.06);
+  transition: transform .22s, box-shadow .22s;
+  border-left: 4px solid var(--primary);
+}
+
+.card:hover { transform: translateY(-5px); }
+
+.title { font-size:1.02rem; font-weight:700; color:var(--accent); }
+
+.meta { font-size:.85rem; color: rgba(27,27,27,0.6); margin-top:.4rem; }
+
+.kpis { display:flex; gap:.6rem; margin-top:.7rem; flex-wrap:wrap; }
+
+.kpi {
+  background: rgba(26,115,232,0.06);
+  padding:.4rem .55rem;
+  border-radius:10px;
+  font-weight:600;
+  color:var(--primary-dark);
+  font-size:.85rem;
+}

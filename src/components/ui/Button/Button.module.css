@@ -1,0 +1,31 @@
+.btn {
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:.45rem;
+  padding:.6rem .9rem;
+  border-radius:10px;
+  border:0;
+  cursor:pointer;
+  font-weight:600;
+  transition: transform .12s ease, box-shadow .12s;
+}
+
+.btn:active { transform: translateY(1px); }
+
+.primary {
+  background: linear-gradient(180deg, var(--primary), var(--primary-dark));
+  color:#fff;
+  box-shadow: 0 6px 18px rgba(26,115,232,0.16);
+}
+
+.ghost {
+  background: transparent;
+  border: 1px solid rgba(27,27,27,0.08);
+  color: var(--accent);
+}
+
+.danger {
+  background: var(--danger);
+  color: white;
+}

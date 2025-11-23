@@ -2,14 +2,40 @@
   padding: 1.5rem 1rem;
 }
 
-.title {
-  font-size: 1.8rem;
-  margin-bottom: 1rem;
+.header {
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+  gap:1rem;
+  margin-bottom:1rem;
 }
 
-.card {
-  background: var(--card-bg);
-  padding: 1.3rem;
-  border-radius: 14px;
-  box-shadow: 0 3px 12px rgba(0,0,0,.12);
+.title { font-size:1.5rem; font-weight:700; }
+
+.meta { color: rgba(27,27,27,0.65); margin-top:.35rem; display:flex; gap:.6rem; flex-wrap:wrap; }
+
+.actions { display:flex; gap:.6rem; align-items:center; }
+
+.section { margin-top:1rem; }
+
+.sectionTitle { font-size:1.05rem; margin-bottom:.6rem; }
+
+.activitiesGrid { display:grid; gap:.9rem; }
+
+@media(min-width:768px) {
+  .activitiesGrid { grid-template-columns: repeat(2, 1fr); }
 }
+
+.freelancers { display:flex; gap:.6rem; flex-wrap:wrap; }
+
+.freelancerCard {
+  background: var(--card-bg);
+  padding:.8rem;
+  border-radius:10px;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.06);
+}
+
+.freelancerName { font-weight:700; color:var(--primary-dark); }
+.freelancerMeta { font-size:.9rem; color: rgba(27,27,27,0.6); }
+
+.empty { color:#666; padding:.8rem; }

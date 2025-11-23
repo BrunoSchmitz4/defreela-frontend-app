@@ -1,0 +1,28 @@
+.item {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:.6rem;
+  padding:.45rem .5rem;
+  border-radius:8px;
+  background: rgba(240,244,255,0.6);
+  margin-bottom:.45rem;
+}
+
+.left { display:flex; gap:.6rem; align-items:center; }
+
+.info { display:flex; flex-direction:column; }
+
+.title { font-weight:600; color:var(--primary-dark); }
+
+.meta { font-size:.82rem; color: rgba(27,27,27,0.6); }
+
+.actions { display:flex; gap:.4rem; align-items:center; }
+
+.badge {
+  background: rgba(11,42,79,0.06);
+  padding:.25rem .5rem;
+  border-radius:8px;
+  font-size:.8rem;
+  color: var(--primary-dark);
+}

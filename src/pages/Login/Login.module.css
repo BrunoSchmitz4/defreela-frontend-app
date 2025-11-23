@@ -1,0 +1,43 @@
+.page {
+  min-height: calc(100vh - 70px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.card {
+  width: 100%;
+  max-width: 420px;
+  background: var(--card-bg);
+  padding: 2rem;
+  border-radius: 14px;
+  box-shadow: 0 3px 10px rgba(0,0,0,.1);
+  animation-duration: .6s;
+}
+
+.muted {
+  margin-bottom: 1rem;
+  color: #777;
+}
+
+.form label {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.error {
+  background: rgba(211, 47, 47, .1);
+  border: 1px solid var(--danger);
+  color: var(--danger);
+  padding: .5rem;
+  border-radius: 8px;
+  margin-bottom: .8rem;
+}
+
+.info {
+  color: #666;
+  margin-top: 1rem;
+  display: block;
+  font-size: .8rem;
+}

@@ -1,4 +1,3 @@
-// src/api/atividadeService.js
 import axiosClient from "./axiosClient";
 
 /**

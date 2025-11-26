@@ -1,70 +1,230 @@
-# Getting Started with Create React App
+# 🚀 DeFreela Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<div align="center">
 
-## Available Scripts
+![React](https://img.shields.io/badge/React-19.2.0-61DAFB?style=for-the-badge&logo=react&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![CSS3](https://img.shields.io/badge/CSS3-Modules-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-Ready-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 
-In the project directory, you can run:
+**Plataforma moderna para gestão de projetos freelance**
 
-### `npm start`
+</div>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 📋 Sobre o Projeto
 
-### `npm test`
+DeFreela é uma aplicação web moderna construída com React que conecta empresas, freelancers e projetos em uma plataforma integrada. O frontend oferece uma interface intuitiva e responsiva para gerenciar todos os aspectos do trabalho freelance.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+###  Destaques
 
-### `npm run build`
+-  **Design Moderno**: Interface clean com sistema de design consistente
+-  **Responsivo**: Totalmente adaptável para mobile, tablet e desktop
+-  **Autenticação JWT**: Sistema seguro de autenticação com Context API
+-  **Performance**: Otimizado com code splitting e lazy loading
+-  **Animações**: Experiência fluida com Animate.css
+-  **Docker Ready**: Configuração completa para containerização
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+##  Funcionalidades
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 🏢 Gestão de Empresas
+-  Listagem e cadastro de empresas
+-  Visualização de informações detalhadas
+-  Cards informativos com dados essenciais
 
-### `npm run eject`
+### 👨‍💻 Gestão de Freelancers
+-  Catálogo de freelancers disponíveis
+-  Portfólios e especializações
+-  Informações de contato e habilidades
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 📁 Gestão de Projetos
+-  Criação e acompanhamento de projetos
+-  Progresso visual com barras de status
+-  Kanban de atividades e tarefas
+-  Atribuição de freelancers aos projetos
+-  Reordenação de atividades
+-  Toggle de status de tarefas
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 🔐 Autenticação
+-  Login seguro com JWT
+-  Rotas protegidas
+-  Context de autenticação global
+-  Auto-redirect em caso de token expirado
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### 🎨 UI/UX
+-  Sistema de design unificado
+-  Paleta de cores moderna (Blue, White & Black)
+-  Componentes reutilizáveis
+-  Animações suaves e transições
+-  Mobile-first approach
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## 🛠️ Tecnologias
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Core
+- **React 19.2.0** - Biblioteca principal
+- **React Router DOM 7.9.6** - Roteamento SPA
+- **Axios 1.13.2** - Cliente HTTP
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Estilização
+- **CSS Modules** - Estilos encapsulados
+- **Animate.css 4.1.1** - Biblioteca de animações
 
-### Code Splitting
+### Build & Deploy
+- **React Scripts 5.0.1** - Tooling CRA
+- **Docker** - Containerização
+- **Nginx** - Servidor de produção
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+## 📦 Instalação
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Pré-requisitos
 
-### Making a Progressive Web App
+- Node.js 18+ 
+- npm ou yarn
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Instalação Local
 
-### Advanced Configuration
+```bash
+# Clone o repositório
+git clone https://github.com/BrunoSchmitz4/defreela-frontend-app
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+# Entre no diretório
+cd defreela-frontend
 
-### Deployment
+# Instale as dependências
+npm install
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+# Configure as variáveis de ambiente
+cp .env.example .env.local
 
-### `npm run build` fails to minify
+# Inicie o servidor de desenvolvimento
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## ⚙️ Configuração
+
+### Variáveis de Ambiente
+
+Crie um arquivo `.env.local` na raiz do projeto:
+
+```env
+# URL da API Backend
+REACT_APP_API_URL=http://localhost:8080
+
+```
+
+### Configuração da API
+
+O frontend está configurado para se comunicar com a API através do arquivo `src/api/axiosClient.js`:
+
+```javascript
+const API_BASE = process.env.REACT_APP_API_URL || "http://localhost:8080";
+```
+
+**Nota**: Em produção com Docker, o Nginx faz proxy reverso para o backend através da rota `/api/`.
+
+---
+
+## 📂 Estrutura do Projeto
+
+```
+frontend/
+├── public/                 # Arquivos estáticos
+│   ├── index.html         # HTML principal
+│   └── favicon.ico        # Ícone do site
+│
+├── src/
+│   ├── api/               # Serviços de comunicação com API
+│   │   ├── axiosClient.js       # Cliente HTTP configurado
+│   │   ├── authService.js       # Autenticação
+│   │   ├── empresaService.js    # Empresas
+│   │   ├── freelancerService.js # Freelancers
+│   │   ├── projetoService.js    # Projetos
+│   │   ├── atividadeService.js  # Atividades
+│   │   ├── tarefaService.js     # Tarefas
+│   │   └── ...                  # Outros serviços
+│   │
+│   ├── components/        # Componentes reutilizáveis
+│   │   ├── Navbar/              # Barra de navegação
+│   │   ├── ProjectCard/         # Card de projeto
+│   │   ├── ActivityCard/        # Card de atividade
+│   │   ├── TaskItem/            # Item de tarefa
+│   │   ├── EntityModal/         # Modal genérico
+│   │   ├── ProtectedRoute/      # Rota protegida
+│   │   ├── Spinner/             # Loading spinner
+│   │   └── ui/                  # Componentes UI base
+│   │       ├── Button/
+│   │       └── Input/
+│   │
+│   ├── context/           # Context API
+│   │   └── AuthContext.jsx      # Contexto de autenticação
+│   │
+│   ├── hooks/             # Custom Hooks
+│   │   ├── useCrud.js           # CRUD genérico
+│   │   └── useProject.js        # Lógica de projetos
+│   │
+│   ├── pages/             # Páginas da aplicação
+│   │   ├── Home/                # Página inicial
+│   │   ├── Login/               # Autenticação
+│   │   ├── Dashboard/           # Dashboard principal
+│   │   ├── Companies/           # Listagem de empresas
+│   │   ├── Freelancers/         # Listagem de freelancers
+│   │   ├── Projects/            # Listagem de projetos
+│   │   ├── ProjectDetail/       # Detalhes do projeto
+│   │   └── ...                  # Outras páginas
+│   │
+│   ├── routes/            # Configuração de rotas
+│   │   └── AppRoutes.jsx        # Rotas da aplicação
+│   │
+│   ├── styles/            # Estilos globais
+│   │   └── globals.css          # CSS global + sistema de design
+│   │
+│   ├── App.jsx            # Componente raiz
+│   └── index.jsx          # Entry point
+│
+├── nginx.conf             # Configuração do Nginx
+├── Dockerfile             # Configuração Docker
+├── .dockerignore          # Arquivos ignorados no Docker
+├── package.json           # Dependências e scripts
+└── README.md             # Este arquivo
+```
+
+## 📝 Scripts Disponíveis
+
+| Script | Descrição |
+|--------|-----------|
+| `npm start` | Inicia servidor de desenvolvimento |
+| `npm run build` | Gera build de produção |
+| `npm test` | Executa testes |
+| `npm run eject` | Ejeta configurações do CRA ⚠️ |
+
+---
+
+## 🚀 Deploy
+
+### Build de Produção
+
+```bash
+# Gerar build otimizado
+npm run build
+
+# O build estará em ./build/
+```
+
+## 📄 Licença
+
+Esse projeto é acadêmico.
+
+---
+
+## 👥 Autores
+
+- Bruno Schmitz da Silva
+
+---
